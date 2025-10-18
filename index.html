@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinchan Suvarna - Portfolio</title>
 
-    <!-- Google Fonts -->
+    <!-- SEO and Social Sharing Meta Tags -->
+    <meta name="description" content="The portfolio of Sinchan Suvarna, a Computer Science student, aspiring web developer, and content writer based in Dubai.">
+    <meta property="og:title" content="Sinchan Suvarna | Developer Portfolio">
+    <meta property="og:description" content="Building my path, one line of code at a time. Explore my projects, skills, and achievements.">
+    <meta property="og:image" content="images/profile.jpeg">
+    <meta property="og:url" content="https://chan-nie.github.io/portfolio">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Add a favicon -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Libre+Franklin&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Libre+Franklin&family=Parisienne&family=Dancing+Script&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
@@ -18,91 +24,208 @@
 
 <body>
 
-    <!-- Navigation Bar -->
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#achievements">Achievements</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div>
-            <h1>Sinchan Suvarna</h1>
-            <p>A creative journey through code and design.</p>
+        <div class="hero-content">
+            <img src="images/profile.jpeg" alt="Sinchan Suvarna Profile Photo" class="profile-photo">           
+            <div class="hero-text">
+                <h1>Sinchan Suvarna</h1>
+                <p class="subtitle">Second-Year CSE Student | Aspiring Web Developer | Content Writer @ GDG MAHE Dubai</p>
+                <p class="tagline">Building my path, one line of code at a time.</p>
+            </div>
         </div>
     </section>
 
     <main>
-        <!-- About Me Section -->
-        <section id="about" class="section">
+        <section id="about" class="section about-section">
             <h2>About Me</h2>
-            <p>
-                Hello! I'm Sinchan Suvarna, a passionate web developer with a love for creating things for the internet. My journey into programming started on Khan Academy, where my curiosity was sparked by building small games and animations. That initial excitement has grown into a dedicated passion for web development.
-                <br><br>
-                I enjoy the challenge of solving problems and bringing ideas to life through code. I have a strong foundation in <code>HTML</code>, the language that underpins the entire web, and I am always eager to learn new technologies and expand my skillset. I believe in building websites that are not only functional but also enjoyable to use.
-            </p>
+            <div class="about-content">
+                <div class="profile-photo-container">
+                    <p class="intro-text">Hello! I'm Sinchan Suvarna, a Computer Science student who enjoys developing for the web and writing about technology.</p>
+                </div>
+
+                <h3>My Tech Journey</h3>
+                <p>My interest in tech sparked in middle school with block coding and grew into building webpages on Khan Academy. This led me to my current <a href="https://www.manipaldubai.com/programs/b-tech-computer-science-engineering" target="_blank">B.Tech in Computer Science at MAHE Dubai</a>, where I'm focusing on front-end development. To continuously sharpen my skills, I've earned over 20 certifications in modern technologies, including Microsoft Azure AI and GitHub Actions.</p>
+                
+                <h3>Community & Communication</h3>
+                <p>As a Content Writing Team Member for <a href="https://gdg.community.dev/gdg-on-campus-manipal-academy-of-higher-education-dubai-united-arab-emirates" target="_blank">Google Developer Groups (GDG) MAHE Dubai</a>, I help grow our campus developer community by making complex technical topics more accessible. I recently co-hosted a hands-on workshop on Git & GitHub, guiding my peers through the fundamentals of version control and collaboration.</p>
+                
+                <h3>Life Outside of Code</h3>
+                <p>When I'm not at my computer, you can usually find me:</p>
+                <ul>
+                    <li><strong>Playing the Keyboard:</strong> I've completed up to Grade 2 from Trinity College London, earning a distinction in my first grade. Music is a way for me to explore creativity beyond coding.</li>
+                    <li><strong>Practicing Karate:</strong> I'm a black belt, and I enjoy the discipline and focus it brings to my life.</li>
+                    <li><strong>Languages:</strong> I'm bilingually fluent in English, Hindi, Tulu, and Kannada, and I'm currently learning Japanese (CEFR A1). Exploring languages helps me connect with new cultures and perspectives.</li>
+                </ul>
+                <p>Figuring things out one project at a time.</p>
+            </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="https://www.khanacademy.org/computer-programming/my-blog/5309682150752256/5277151681101824.png" alt="My Blog Project Thumbnail">
-                    <div class="project-card-content">
-                        <h3>My Personal Blog</h3>
-                        <p>This was one of my first projects to share updates and thoughts. I experimented with layout and styling to create a unique feel.</p>
-                        <a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-blog/5309682150752256" target="_blank">View Project &rarr;</a>
-                    </div>
+        <!-- Skills & Certifications Section -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <p class="section-subtitle">The primary technologies and skills I work with.</p>
+            <div class="skills-grid">
+                
+                <div class="skill-category">
+                    <h3>Languages & Core Web</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i> HTML</li>
+                        <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                        <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                        <li><i class="fa-brands fa-python"></i> Python</li>
+                        <li><i class="fa-solid fa-database"></i> SQL</li>
+                    </ul>
                 </div>
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <img src="https://placehold.co/600x400/B2C8DF/2A353C?text=My+Next+Project" alt="Placeholder for a future project">
-                    <div class="project-card-content">
-                        <h3>Your Next Big Project</h3>
-                        <p>This is a spot for your next creation! Every new project is a chance to learn something new and improve your skills.</p>
-                        <a href="#">Link coming soon...</a>
-                    </div>
+
+                <div class="skill-category">
+                    <h3>Data & AI</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-chart-simple"></i> Pandas & Matplotlib</li>
+                        <li><i class="fa-brands fa-microsoft"></i> Microsoft Azure</li>
+                        <li><i class="fa-solid fa-robot"></i> Machine Learning</li>
+                        <li><i class="fa-solid fa-brain"></i> Generative AI</li>
+                    </ul>
                 </div>
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <img src="https://placehold.co/600x400/2A353C/FFFFFF?text=Another+Cool+Idea" alt="Placeholder for a future project">
-                    <div class="project-card-content">
-                        <h3>Another Cool Idea</h3>
-                        <p>As you build more, you can add them here. A portfolio is a living document that grows with you and your abilities.</p>
-                        <a href="#">Link coming soon...</a>
-                    </div>
+
+                <div class="skill-category">
+                    <h3>Developer Tools & Platforms</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-git-alt"></i> Git</li>
+                        <li><i class="fa-brands fa-github"></i> GitHub</li>
+                        <li><i class="fa-brands fa-figma"></i> GitHub Copilot</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Professional Skills</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-pen-nib"></i> Content Writing</li>
+                        <li><i class="fa-solid fa-lightbulb"></i> Problem Solving</li>
+                        <li><i class="fa-solid fa-list-check"></i> Project Management</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <div class="certifications">
+                <h2>Key Certifications</h2>
+                <p class="cert-intro">Committed to growth, I've completed these professional certifications and learning paths.</p>
+                <div class="cert-grid">
+                    <div class="cert-card"><i class="fa-brands fa-microsoft"></i> Microsoft Azure AI Essentials</div>
+                    <div class="cert-card"><i class="fa-solid fa-code"></i> Career in Front-End Web Development</div>
+                    <div class="cert-card"><i class="fa-brands fa-html5"></i> HTML, CSS & JavaScript Essentials</div>
+                    <div class="cert-card"><i class="fa-brands fa-react"></i> React.js Essential Training</div>
+                    <div class="cert-card"><i class="fa-brands fa-github"></i> Practical GitHub Suite</div>
+                    <div class="cert-card"><i class="fa-solid fa-robot"></i> Generative AI</div>
+                    <div class="cert-card"><i class="fa-solid fa-vr-cardboard"></i> Augmented Reality (Tynker)</div>
+                    <div class="cert-card"><i class="fa-solid fa-universal-access"></i> Web Accessibility Best Practices</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+            <h2>Achievements & Leadership</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fa-solid fa-award"></i></div>
+                    <h3>Academic Topper</h3>
+                    <p>Awarded by MediaOne for outstanding success and excellent grades in the Grade 10/12 Gulf Toppers Examination.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fa-solid fa-fist-raised"></i></div>
+                    <h3>Karate Black Belt (Sho-Dan)</h3>
+                    <p>Earned from Alan-Thilak Karate School, recognized by the Karate Association of India. A testament to years of discipline and dedication.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fa-solid fa-music"></i></div>
+                    <h3>Trinity College London - Grade 2</h3>
+                    <p>Completed Grade 2 in Electronic Keyboards, achieving a distinction in the initial grade, showcasing a passion for music.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h3>Git & GitHub Workshop Host</h3>
+                    <p>Co-hosted and led a workshop for the Google Developer Club, teaching peers the fundamentals of version control.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fa-solid fa-users"></i></div>
+                    <h3>Symposium Organizer</h3>
+                    <p>Recognized for outstanding contributions as an organizer for the 3rd Symposium on Mathematics and Statistics in Engineering.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3>AI & Cloud Workshop Participant</h3>
+                    <p>Actively participated in workshops on AI Agents (GDG, previously known as GDSC) and Project IDX: Code to Cloud, staying current with emerging technologies.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/Hardware-Setup.jpeg" alt="Eye Recognition Access System Project Thumbnail">
+                    <div class="project-card-content">
+                        <h3>Eye Recognition Access System</h3>
+                        <p>A team-based electronics project using ESP32-CAM and Arduino Uno for secure access control. Developed logic for image capture, fuzzy matching, and OLED display output.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/Space-Mission-Analysis.png" alt="Space Mission Analysis Tool Project Thumbnail">
+                    <div class="project-card-content">
+                        <h3>A Space Mission Analysis Tool</h3>
+                        <p>A Python-based command-line tool using Pandas and Matplotlib to explore and visualize a dataset of 30 space missions. Revisited to apply version control and documentation.</p>
+                        <a href="https://github.com/Chan-nie/space-mission-analysis" target="_blank">View on GitHub &rarr;</a> 
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/KA-Proj.png" alt="My KA Project Showcase">
+                    <div class="project-card-content">
+                        <h3>Early Projects (Khan Academy)</h3>
+                        <p>This collection showcases my early experiments building interactive websites, creating graphics with p5.js, and developing simple games while learning the fundamentals of HTML, CSS, and JavaScript.</p>
+                        <a href="https://www.khanacademy.org/profile/kaid_311111136670840237432246/projects" target="_blank">View Project &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <p class="connect-prompt">Interested in seeing more? Let's connect!</p>
+        </section>
+
         <section id="contact" class="section">
             <h2>Get In Touch</h2>
-            <p>I'm always learning and creating. The best place to see my latest work is on Khan Academy.</p>
-            <a href="https://www.khanacademy.org/profile/suva06/" class="contact-link" target="_blank">View My Khan Academy Profile</a>
+            <p>I'm always open to collaborating on interesting projects or discussing new opportunities. Feel free to connect with me!</p>
+            <div class="contact-methods">
+                <a href="mailto:sinchan17suvarna@gmail.com" class="contact-link"><i class="fa-solid fa-envelope"></i> Email Me</a>
+                <a href="https://www.linkedin.com/in/sinchan-suvarna" target="_blank" class="contact-link"><i class="fa-brands fa-linkedin"></i> Connect on LinkedIn</a>
+                <a href="https://github.com/Chan-nie" target="_blank" class="contact-link"><i class="fa-brands fa-github"></i> View My GitHub</a>
+                <a href="https://www.khanacademy.org/profile/suva06/" class="contact-link" target="_blank"><i class="fa-solid fa-pencil"></i> My Khan Academy Profile</a>
+            </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="social-links">
-            <!-- GitHub Logo Link -->
-            <a href="#" target="_blank" class="social-link" aria-label="GitHub Profile">
+            <a href="https://github.com/Chan-nie" target="_blank" class="social-link" aria-label="GitHub Profile">
                 <i class="fa-brands fa-github"></i>
             </a>
-            <!-- LinkedIn Logo Link -->
-            <a href="#" target="_blank" class="social-link" aria-label="LinkedIn Profile">
+            <a href="https://www.linkedin.com/in/sinchan-suvarna" target="_blank" class="social-link" aria-label="LinkedIn Profile">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
-            <!-- Email Logo Link -->
-            <a href="mailto:your.email@example.com" class="social-link" aria-label="Send an Email">
+            <a href="mailto:sinchan17suvarna@gmail.com" class="social-link" aria-label="Send an Email">
                 <i class="fa-solid fa-envelope"></i>
             </a>
-        </div>
+            </div>
         <p class="copyright">&copy; 2025 Sinchan Suvarna</p>
     </footer>
 
@@ -110,3 +233,4 @@
 
 </body>
 </html>
+
