@@ -1,23 +1,234 @@
+/* --- Base & Animations --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f9;
+}
+
+@keyframes float {
+    from { transform: translateY(5px); }
+    to { transform: translateY(-5px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #eef2f5;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #B2C8DF;
+    border-radius: 20px;
+    border: 3px solid #eef2f5;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #2C4770;
+}
+
+/* --- Navigation Bar --- */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: rgba(42, 53, 60, 0.85);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    z-index: 100;
+    border-bottom: 2px solid #546a79;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #F97068;
+    color: white;
+}
+
+/* --- Hero Section (Welcome) --- */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #2A353C, #13070C);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 5rem;
+    animation: float 2s alternate infinite ease-in-out;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #B2C8DF;
+}
+
+/* --- General Section Styling --- */
+.section {
+    padding: 80px 40px;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2A353C;
+    margin-bottom: 50px;
+    font-family: 'Cormorant SC', serif;
+}
+
+/* --- About Section --- */
+#about p {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    line-height: 1.6;
-}
-
-header {
     text-align: center;
-    margin-bottom: 40px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #333;
 }
 
-section {
+#about .name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #F97068;
+}
+
+/* --- Projects Section --- */
+#projects {
+    background-color: #eef2f5;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card-content {
+    padding: 25px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #2A353C;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #F97068;
+    font-weight: bold;
+}
+
+/* --- Contact Section --- */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    font-size: 1.1rem;
     margin-bottom: 30px;
 }
 
+.contact-link {
+    display: inline-block;
+    background-color: #F97068;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-link:hover {
+    background-color: #540804;
+    transform: scale(1.05);
+}
+
+/* --- Footer --- */
 footer {
     text-align: center;
-    margin-top: 50px;
-    font-size: 0.9em;
-    color: gray;
+    padding: 40px 20px;
+    background-color: #2A353C;
+    color: #B2C8DF;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px;
+}
+
+.social-link i {
+    font-size: 28px;
+    color: #B2C8DF;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-link:hover i {
+    color: #F97068;
+    transform: scale(1.1);
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #8fa5b8;
 }
