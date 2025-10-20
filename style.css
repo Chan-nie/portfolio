@@ -2,11 +2,10 @@
 :root {
     --primary-color: #2A353C; /* Dark Slate Gray */
     --secondary-color: #B2C8DF; /* Light Steel Blue */
-    --accent-color: #6D98BA;  /* A slightly darker blue for links/hovers */
-    --light-bg: #f9f9f9;
-    --white: #FFFFFF;
-    --text-color: #333;
-
+    --accent-color: #6D98BA;  /* light aqua */
+    --light-bg: #f9f9f9; /* gray */
+    --white: #FFFFFF; /* white */
+    --text-color: #333; /* black looking blue */
     --heading-font: 'Cormorant SC', serif;
     --body-font: 'Libre Franklin', sans-serif;
 }
@@ -44,7 +43,7 @@ body {
 a {
     text-decoration: none;
     color: var(--accent-color);
-    transition: color 0.3s ease;
+    transition: color 0.15s ease;
 }
 
 a:hover {
@@ -143,7 +142,7 @@ nav a:hover {
 }
 
 .hero-text h1 {
-    animation: float 6s ease-in-out infinite;
+    animation: float 3s ease-in-out infinite;
 }
 
 .hero .profile-photo {
@@ -180,7 +179,6 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
-
     .hero-content {
         flex-direction: column;
         text-align: center;
@@ -376,7 +374,7 @@ nav a:hover {
     margin-top: 1rem;
 }
 
-.connect-prompt {
+#connect-prompt {
     margin-top: 3rem;
     font-size: 1.2rem;
     font-weight: 500;
@@ -443,9 +441,16 @@ footer {
 
 /* --- Responsive Design --- */
 @media (max-width: 768px) {
-    h1 { font-size: 3rem; }
-    .hero h1 { font-size: 4rem; }
-    h2 { font-size: 2rem; }
+    h1 { 
+        font-size: 3rem; 
+    }
+
+    .hero h1 { 
+        font-size: 4rem; 
+    }
+    h2 { 
+        font-size: 2rem; 
+    }
 
     .section {
         padding: 4rem 1rem;
