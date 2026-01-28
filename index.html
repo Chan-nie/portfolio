@@ -5,236 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinchan Suvarna - Portfolio</title>
 
-    <!-- SEO and Social Sharing Meta Tags -->
-    <meta name="description" content="The portfolio of Sinchan Suvarna, a Computer Science student, aspiring web developer, and content writer based in Dubai.">
-    <meta property="og:title" content="Sinchan Suvarna | Developer Portfolio">
-    <meta property="og:description" content="Building my path, one line of code at a time. Explore my projects, skills, and achievements.">
-    <meta property="og:image" content="images/profile.jpeg">
-    <meta property="og:url" content="https://chan-nie.github.io/portfolio">
+    <meta name="description" content="Portfolio of Sinchan Suvarna, CSE student and Web Developer.">
     <link rel="icon" href="images/icon.png" type="image/png">
 
-    <!-- Font and Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Libre+Franklin&family=Parisienne&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600&family=Libre+Franklin:wght@300;400;600&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
 
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
     </nav>
 
-    <!-- Home Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <img src="images/profile.jpeg" alt="Sinchan Suvarna Profile Photo" class="profile-photo">           
+            <img src="images/profile.jpeg" alt="Sinchan Suvarna" class="profile-photo">           
             <div class="hero-text">
                 <h1>Sinchan Suvarna</h1>
-                <p class="subtitle">Second-Year CSE Student | Aspiring Web Developer | Content Writer @ GDG MAHE Dubai</p>
+                <p class="subtitle">Second-Year CSE Student | Aspiring Web Developer</p>
                 <p class="tagline">Building my path, one line of code at a time.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="contact-link">View My Work</a>
+                </div>
             </div>
         </div>
     </section>
 
     <main>
-        <!-- About Section -->
-        <section id="about" class="section about-section">
+        <section id="about" class="section">
             <h2>About Me</h2>
             <div class="about-content">
-                <div class="profile-photo-container">
-                    <p class="intro-text">Hello! I'm Sinchan Suvarna, a Computer Science student who enjoys developing for the web and writing about technology.</p>
+                <p class="intro-text">Hello! I'm Sinchan, a Computer Science student passionate about web development and technical writing at GDG MAHE Dubai.</p>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3><i class="fa-solid fa-code"></i> Tech Journey</h3>
+                        <p>From Tynker in middle school to a B.Tech at MAHE Dubai. I've earned 20+ certs in Azure, GitHub, and Web Tech.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3><i class="fa-solid fa-user-group"></i> Community</h3>
+                        <p>Content Writer for GDG MAHE Dubai. I co-host workshops to make Git and GitHub accessible for everyone.</p>
+                    </div>
                 </div>
 
-                <h3>My Tech Journey</h3>
-                <p>My interest in tech sparked in middle school with block coding on Tynker and grew into building webpages on Khan Academy. That early curiosity led me to pursue a B.Tech in Computer Science at MAHE Dubai, where I'm now focusing on front-end development. To keep learning, I've earned over 20 certifications in modern technologies, including Microsoft Azure AI and GitHub Actions. View <a href="https://www.linkedin.com/in/sinchan-suvarna/details/certifications">my certifications on LinkedIn.</a></p>
-                
-                <h3>Community & Communication</h3>
-                <p>As a Content Writing Team Member for <a href="https://gdg.community.dev/gdg-on-campus-manipal-academy-of-higher-education-dubai-united-arab-emirates" target="_blank">Google Developer Groups (GDG) MAHE Dubai</a>, I help grow our campus developer community by making complex technical topics more accessible. I recently co-hosted a hands-on workshop on Git & GitHub, guiding my peers through the fundamentals of version control and collaboration.</p>
-                
-                <h3>Life Outside of Code</h3>
-                <p>When I'm not at my computer, you can usually find me:</p>
-                <ul>
-                    <li><strong>Playing the Keyboard:</strong> I've completed up to Grade 2 from Trinity College London, earning a distinction in my initial grade. Music is a way for me to explore creativity beyond coding.</li>
-                    <li><strong>Practicing Karate:</strong> I'm a black belt, and I enjoy the discipline and focus it brings to my life.</li>
-                    <li><strong>Languages:</strong> I'm multilingually fluent in English, Hindi, Tulu, and Kannada, and I'm currently learning Japanese (CEFR A1). Exploring languages helps me connect with new cultures and perspectives.</li>
+                <h3>Beyond the Screen</h3>
+                <ul class="hobby-list">
+                    <li><strong><i class="fa-solid fa-keyboard"></i> Music:</strong> Grade 2 Trinity College London (Distinction).</li>
+                    <li><strong><i class="fa-solid fa-fist-raised"></i> Karate:</strong> Black Belt (Sho-Dan) - KAI recognized.</li>
+                    <li><strong><i class="fa-solid fa-language"></i> Languages:</strong> English, Hindi, Tulu, Kannada & Japanese (A1).</li>
                 </ul>
-                <p>Figuring things out one project at a time.</p>
             </div>
         </section>
 
-        <!-- Skills Section -->
         <section id="skills" class="section">
-            <h2>Skills</h2>
-            <p class="section-subtitle">The primary technologies and skills I work with.</p>
+            <h2>My Toolkit</h2>
             <div class="skills-grid">
-                
                 <div class="skill-category">
-                    <h3>Languages & Core Web</h3>
+                    <h3>Web Core</h3>
                     <ul>
-                        <li><i class="fa-brands fa-html5"></i> HTML</li>
-                        <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                        <li><i class="fa-brands fa-html5"></i> HTML/CSS</li>
                         <li><i class="fa-brands fa-js"></i> JavaScript</li>
                         <li><i class="fa-brands fa-python"></i> Python</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Data & Cloud</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-microsoft"></i> Azure AI</li>
+                        <li><i class="fa-solid fa-chart-line"></i> Pandas/Matplotlib</li>
                         <li><i class="fa-solid fa-database"></i> SQL</li>
                     </ul>
                 </div>
-
                 <div class="skill-category">
-                    <h3>Data & AI</h3>
+                    <h3>Tools</h3>
                     <ul>
-                        <li><i class="fa-solid fa-chart-simple"></i> Pandas & Matplotlib</li>
-                        <li><i class="fa-brands fa-microsoft"></i> Microsoft Azure</li>
-                        <li><i class="fa-solid fa-robot"></i> Machine Learning</li>
-                        <li><i class="fa-solid fa-brain"></i> Generative AI</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Developer Tools & Platforms</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-git-alt"></i> Git</li>
-                        <li><i class="fa-brands fa-github"></i> GitHub</li>
-                        <li><i class="fa-brands fa-figma"></i> GitHub Copilot</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Professional Skills</h3>
-                    <ul>
+                        <li><i class="fa-brands fa-github"></i> Git/GitHub</li>
+                        <li><i class="fa-solid fa-terminal"></i> VS Code</li>
                         <li><i class="fa-solid fa-pen-nib"></i> Content Writing</li>
-                        <li><i class="fa-solid fa-lightbulb"></i> Problem Solving</li>
-                        <li><i class="fa-solid fa-list-check"></i> Project Management</li>
                     </ul>
                 </div>
-
             </div>
         </section>
 
-        <!-- Certifications Section -->
-        <section id="certifications" class="section">
-            <div class="certifications">
-                <h2>Key Certifications</h2>
-                <p class="cert-intro">Committed to growth, I've completed these professional certifications and learning paths.</p>
-                <div class="cert-grid">
-                    <div class="cert-card"><i class="fa-brands fa-microsoft"></i> Microsoft Azure AI Essentials</div>
-                    <div class="cert-card"><i class="fa-solid fa-code"></i> Career in Front-End Web Development</div>
-                    <div class="cert-card"><i class="fa-brands fa-html5"></i> HTML, CSS & JavaScript Essentials</div>
-                    <div class="cert-card"><i class="fa-brands fa-react"></i> React.js Essential Training</div>
-                    <div class="cert-card"><i class="fa-brands fa-github"></i> Practical GitHub Suite</div>
-                    <div class="cert-card"><i class="fa-solid fa-robot"></i> Generative AI</div>
-                    <div class="cert-card"><i class="fa-solid fa-vr-cardboard"></i> Augmented Reality (Tynker)</div>
-                    <div class="cert-card"><i class="fa-solid fa-universal-access"></i> Web Accessibility Best Practices</div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Achievements Section -->
-        <section id="achievements" class="section">
-            <h2>Achievements & Leadership</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-icon"><i class="fa-solid fa-award"></i></div>
-                    <h3>Academic Achiever</h3>
-                    <p>Awarded by MediaOne for outstanding success and excellent grades in the Grade 10/12 Gulf Toppers Examination.</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon"><i class="fa-solid fa-fist-raised"></i></div>
-                    <h3>Karate Black Belt (Sho-Dan)</h3>
-                    <p>Earned from Alan-Thilak Karate School, recognized by the Karate Association of India, through years of practice.</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon"><i class="fa-solid fa-music"></i></div>
-                    <h3>Trinity College London - Grade 2</h3>
-                    <p>Completed Grade 2 in Electronic Keyboards earning a distinction in the initial grade, showcasing a passion for music.</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
-                    <h3>Git & GitHub Workshop Host</h3>
-                    <p>Co-hosted and led a hands-on Git & GitHub workshop for 50+ attendees through the Google Developer Club.</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon"><i class="fa-solid fa-users"></i></div>
-                    <h3>Symposium Organizer</h3>
-                    <p>Recognized for outstanding contributions as an organizer for the 3rd Symposium on Mathematics and Statistics in Engineering.</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon"><i class="fa-solid fa-lightbulb"></i></div>
-                    <h3>AI & Cloud Workshop Participant</h3>
-                    <p>Actively participated in workshops on AI Agents and Project IDX: Code to Cloud (hosted by GDG, formerly GDSC), to stay updated with emerging technologies.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
         <section id="projects" class="section">
-            <h2>My Projects</h2>
+            <h2>Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="images/Hardware-Setup.jpeg" alt="Eye Recognition Access System Project Thumbnail">
+                    <div class="img-container"><img src="images/Hardware-Setup.jpeg" alt="Access System"></div>
                     <div class="project-card-content">
-                        <h3>Eye Recognition Access System</h3>
-                        <p>A team-based electronics project using ESP32-CAM and Arduino Uno for secure access control. Developed logic for image capture, fuzzy matching, and OLED display output.</p>
+                        <h3>Eye Recognition Access</h3>
+                        <div class="tag-container"><span class="tag">ESP32</span><span class="tag">Arduino</span></div>
+                        <p>Hardware-based secure access control using fuzzy matching logic.</p>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="images/Space-Mission-Analysis.png" alt="Space Mission Analysis Tool Project Thumbnail">
+                    <div class="img-container"><img src="images/Space-Mission-Analysis.png" alt="Space Analysis"></div>
                     <div class="project-card-content">
-                        <h3>A Space Mission Analysis Tool</h3>
-                        <p>A Python-based command-line tool using Pandas and Matplotlib to explore and visualize a dataset of 30 space missions. Revisited to apply version control and documentation.</p>
-                        <a href="https://github.com/Chan-nie/space-mission-analysis" target="_blank">View on GitHub &rarr;</a> 
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="images/KA-Proj.png" alt="My KA Project Showcase">
-                    <div class="project-card-content">
-                        <h3>Early Projects (Khan Academy)</h3>
-                        <p>This collection showcases my early experiments building interactive websites, creating graphics with p5.js, and developing simple games while learning the fundamentals of HTML, CSS, and JavaScript.</p>
-                        <a href="https://www.khanacademy.org/profile/kaid_311111136670840237432246/projects" target="_blank">View Project &rarr;</a>
+                        <h3>Space Mission Tool</h3>
+                        <div class="tag-container"><span class="tag">Python</span><span class="tag">Pandas</span></div>
+                        <p>Data visualization tool exploring 30+ historic space missions.</p>
+                        <a href="https://github.com/Chan-nie/space-mission-analysis" target="_blank">View Code &rarr;</a>
                     </div>
                 </div>
             </div>
-            <p id="connect-prompt">Interested in seeing more? Let's connect!</p>
+            <p id="connect-prompt">Let's build something together!</p>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="section">
-            <h2>Get In Touch</h2>
-            <p>I'm always open to collaborating on interesting projects or discussing new opportunities. Feel free to connect with me!</p>
+            <h2>Contact</h2>
             <div class="contact-methods">
-                <a href="mailto:sinchan17suvarna@gmail.com" class="contact-link"><i class="fa-solid fa-envelope"></i> Email Me</a>
-                <a href="https://www.linkedin.com/in/sinchan-suvarna" target="_blank" class="contact-link"><i class="fa-brands fa-linkedin"></i> Connect on LinkedIn</a>
-                <a href="https://github.com/Chan-nie" target="_blank" class="contact-link"><i class="fa-brands fa-github"></i> View My GitHub</a>
-                <a href="https://www.khanacademy.org/profile/suva06/" class="contact-link" target="_blank"><i class="fa-solid fa-pencil"></i> My Khan Academy Profile</a>
+                <a href="mailto:sinchan17suvarna@gmail.com" class="contact-link"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="https://linkedin.com/in/sinchan-suvarna" class="contact-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <div class="social-links">
-            <a href="https://github.com/Chan-nie" target="_blank" class="social-link" aria-label="GitHub Profile">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/sinchan-suvarna" target="_blank" class="social-link" aria-label="LinkedIn Profile">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="mailto:sinchan17suvarna@gmail.com" class="social-link" aria-label="Send an Email">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-            </div>
-        <p class="copyright">&copy; 2025 Sinchan Suvarna</p>
+        <p>&copy; 2026 Sinchan Suvarna | Powered by Coffee & Code</p>
     </footer>
 
+    <script>
+        // --- Dark Mode Logic ---
+        const toggleBtn = document.getElementById('theme-toggle');
+        const icon = toggleBtn.querySelector('i');
+        const savedTheme = localStorage.getItem('theme');
+
+        if (savedTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            icon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            let isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            if (isDark) {
+                document.documentElement.removeAttribute('data-theme');
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // --- Scroll Progress Bar ---
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        };
+    </script>
 </body>
 </html>
