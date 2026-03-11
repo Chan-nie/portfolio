@@ -1,177 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinchan Suvarna - Portfolio</title>
-
-    <meta name="description" content="Portfolio of Sinchan Suvarna, CSE student and Web Developer.">
-    <link rel="icon" href="images/icon.png" type="image/png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600&family=Libre+Franklin:wght@300;400;600&family=Parisienne&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Channie | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="progress-container">
-        <div id="progress-bar"></div>
+
+<!-- Navbar -->
+<header>
+  <nav>
+    <h2 class="logo">Sinchan Suvarna</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>Hi, I'm Sinchan Suvarna</h1>
+  <p>Second-Year CSE Student | Aspiring Web Developer</p>
+  <a href="#projects" class="btn">View Projects</a>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+    <p>Hello! I am a Computer Science student passionate about web development and technical writing at GDG MAHE Dubai.</p>
+    <h3>Tech Journey</h3>
+    <p>From Tynker in middle school to a B.Tech at MAHE Dubai, I've earned 20+ certifications in Azure, GitHub, and web technologies.</p>
+
+    <h3>Community</h3>
+    <p>Content Writer for GDG MAHE Dubai. Also, co-hosted a Git & GitHub workshop to help others get started.</p>
+</section>
+
+<section id="achievements" class="section">
+  <h2>Achievements & Certificates 💎</h2>
+  
+  <div class="achievements-container">
+    <div class="achievement-card">
+        <h3>CBSE Class 12 - PCM with IP</h3>
+        <p>Scored above 90%</p>
+        <a href="images/Mabrook Gulf Toppers.pdf" target="_blank">View Certificate</a>
     </div>
 
-    <nav>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <button id="theme-toggle" aria-label="Toggle Theme">
-                <i class="fa-solid fa-moon"></i>
-            </button>
+    <div class="achievement-card">
+        <h3>Coding & Web Dev Certifications</h3>
+        <p>20+ certifications in Azure, GitHub, Web Technologies</p>
+        <a href="https://www.linkedin.com/in/sinchan-suvarna/details/certifications/" target="_blank">View All on LinkedIn</a>
+    </div>
+
+    <!-- Keyboard Certificates as separate cards -->
+    <div class="achievement-card">
+      <h3>Keyboard – Initial Level</h3>
+      <p>Distinction</p>
+      <a href="images/Trinity Initial Grade.pdf" target="_blank">View Certificate</a>
+    </div>
+    
+    <div class="achievement-card">
+      <h3>Keyboard – Grade 1</h3>
+      <a href="images/Trinity Grade 1.pdf" target="_blank">View Certificate</a>
+    </div>
+    
+    <div class="achievement-card">
+      <h3>Keyboard – Grade 2</h3>
+      <a href="images/Trinity Grade 2.pdf" target="_blank">View Certificate</a>
+    </div>
+
+    <!-- Other Achievements -->
+    <div class="achievement-card">
+      <h3>Black Belt (Sho-Dan)</h3>
+      <p>KAI recognized</p>
+      <a href="images/Karate Sho-Dan.pdf" target="_blank">View Certificate</a>
+    </div>
+    
+    <div class="achievement-card">
+      <h3>Japanese (CEFR A2)</h3>
+      <p>Duolingo Score 30</p>
+      <a href="https://www.linkedin.com/in/sinchan-suvarna/details/languages/" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="achievement-card">
+        <h3>Volunteering – RTAMSE</h3>
+        <p>Organiser</p>
+        <a href="images/RTAMSE_2025.pdf" target="_blank">View Certificate</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <div class="skill">C++</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Git</div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="projects-container">
+    <div class="project-card">
+        <img src="images/Hardware-Setup.jpeg" alt="Eye Recognition Access System">
+        <div class="project-info">
+            <h3>Eye Recognition Access System</h3>
+            <p>- 2nd sem Team Project</p>
+            <a href="https://www.linkedin.com/posts/sinchan-suvarna_arduinoprojects-mahedubai-teamcollab-activity-7330520470733094913-eZVE/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYwdNEBhLdNX4XyeLeTF5xXmlI2381_ryc" target="_blank">View Project on LinkedIn</a>
         </div>
-    </nav>
+    </div>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <img src="images/profile.jpeg" alt="Sinchan Suvarna" class="profile-photo">           
-            <div class="hero-text">
-                <h1>Sinchan Suvarna</h1>
-                <p class="subtitle">Second-Year CSE Student | Aspiring Web Developer</p>
-                <p class="tagline">Building my path, one line of code at a time.</p>
-                <div class="hero-cta">
-                    <a href="#projects" class="contact-link">View My Work</a>
-                </div>
-            </div>
+    <div class="project-card">
+    <img src="images/Space-Mission-Analysis.png" alt="Space Mission Analysis">
+        <div class="project-info">
+            <h3>Space Mission Analysis</h3>
+            <p>- 11th grade Team project</p>
+            <a href="https://github.com/Chan-nie/space-mission-analysis" traget="_blank">View Project on Github</a>
         </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <main>
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <p class="intro-text">Hello! I'm Sinchan, a Computer Science student passionate about web development and technical writing at GDG MAHE Dubai.</p>
-                
-                <div class="about-grid">
-                    <div class="about-card">
-                        <h3><i class="fa-solid fa-code"></i> Tech Journey</h3>
-                        <p>From Tynker in middle school to a B.Tech at MAHE Dubai. I've earned 20+ certs in Azure, GitHub, and Web Tech.</p>
-                    </div>
-                    <div class="about-card">
-                        <h3><i class="fa-solid fa-user-group"></i> Community</h3>
-                        <p>Content Writer for GDG MAHE Dubai. I co-host workshops to make Git and GitHub accessible for everyone.</p>
-                    </div>
-                </div>
+<!-- Contact -->
+<section id="contact" class="section">
+  <h2>Contact Me </h2>
+  
+  <div class="contact-container">
+    <p>Email me at: 
+      <a href="mailto:sinchan17suvarna@gmail.com">sinchan17suvarna@gmail.com</a>
+    </p>
 
-                <h3>Beyond the Screen</h3>
-                <ul class="hobby-list">
-                    <li><strong><i class="fa-solid fa-keyboard"></i> Music:</strong> Grade 2 Trinity College London (Distinction).</li>
-                    <li><strong><i class="fa-solid fa-fist-raised"></i> Karate:</strong> Black Belt (Sho-Dan) - KAI recognized.</li>
-                    <li><strong><i class="fa-solid fa-language"></i> Languages:</strong> English, Hindi, Tulu, Kannada & Japanese (A1).</li>
-                </ul>
-            </div>
-        </section>
+    <p>Or connect with me on:</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/sinchan-suvarna/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Chan-nie" target="_blank">GitHub</a>
+    </div>
+  </div>
+</section>
 
-        <section id="skills" class="section">
-            <h2>My Toolkit</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Web Core</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-html5"></i> HTML/CSS</li>
-                        <li><i class="fa-brands fa-js"></i> JavaScript</li>
-                        <li><i class="fa-brands fa-python"></i> Python</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Data & Cloud</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-microsoft"></i> Azure AI</li>
-                        <li><i class="fa-solid fa-chart-line"></i> Pandas/Matplotlib</li>
-                        <li><i class="fa-solid fa-database"></i> SQL</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-github"></i> Git/GitHub</li>
-                        <li><i class="fa-solid fa-terminal"></i> VS Code</li>
-                        <li><i class="fa-solid fa-pen-nib"></i> Content Writing</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+<!-- Footer -->
+<footer>
+  <p>© 2026 Sinchan Suvarna</p>
+</footer>
 
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="img-container"><img src="images/Hardware-Setup.jpeg" alt="Access System"></div>
-                    <div class="project-card-content">
-                        <h3>Eye Recognition Access</h3>
-                        <div class="tag-container"><span class="tag">ESP32</span><span class="tag">Arduino</span></div>
-                        <p>Hardware-based secure access control using fuzzy matching logic.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="img-container"><img src="images/Space-Mission-Analysis.png" alt="Space Analysis"></div>
-                    <div class="project-card-content">
-                        <h3>Space Mission Tool</h3>
-                        <div class="tag-container"><span class="tag">Python</span><span class="tag">Pandas</span></div>
-                        <p>Data visualization tool exploring 30+ historic space missions.</p>
-                        <a href="https://github.com/Chan-nie/space-mission-analysis" target="_blank">View Code &rarr;</a>
-                    </div>
-                </div>
-            </div>
-            <p id="connect-prompt">Let's build something together!</p>
-        </section>
-
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <div class="contact-methods">
-                <a href="mailto:sinchan17suvarna@gmail.com" class="contact-link"><i class="fa-solid fa-envelope"></i> Email</a>
-                <a href="https://linkedin.com/in/sinchan-suvarna" class="contact-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Sinchan Suvarna | Powered by Coffee & Code</p>
-    </footer>
-
-    <script>
-        // --- Dark Mode Logic ---
-        const toggleBtn = document.getElementById('theme-toggle');
-        const icon = toggleBtn.querySelector('i');
-        const savedTheme = localStorage.getItem('theme');
-
-        if (savedTheme === 'dark') {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            icon.classList.replace('fa-moon', 'fa-sun');
-        }
-
-        toggleBtn.addEventListener('click', () => {
-            let isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-            if (isDark) {
-                document.documentElement.removeAttribute('data-theme');
-                icon.classList.replace('fa-sun', 'fa-moon');
-                localStorage.setItem('theme', 'light');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                icon.classList.replace('fa-moon', 'fa-sun');
-                localStorage.setItem('theme', 'dark');
-            }
-        });
-
-        // --- Scroll Progress Bar ---
-        window.onscroll = function() {
-            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            let scrolled = (winScroll / height) * 100;
-            document.getElementById("progress-bar").style.width = scrolled + "%";
-        };
-    </script>
 </body>
 </html>
