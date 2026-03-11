@@ -22,6 +22,22 @@ body{
   line-height:1.6;
 }
 
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body text */
+body, p, li, a {
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
 /* NAVBAR */
 
 header{
@@ -98,6 +114,31 @@ nav a:hover::after{
   font-size:18px;
 }
 
+.about-container{
+  display:flex;
+  align-items:center;
+  gap:25px;
+  flex-wrap:wrap;
+}
+
+.profile-pic{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-text{
+  flex:1;
+}
+
+.about-facts{
+  margin-top:15px;
+  font-size:0.95rem;
+  opacity:0.9;
+}
+
 /* BUTTON */
 
 .btn{
@@ -131,11 +172,16 @@ nav a:hover::after{
 
 /* SKILLS */
 
+#skills{
+  text-align:center;
+}
+
 .skills-container{
   display:flex;
   justify-content:center;
   flex-wrap:wrap;
-  gap:15px;
+  gap:18px;
+  margin-top:20px;
 }
 
 .skill{
@@ -143,6 +189,17 @@ nav a:hover::after{
   padding:10px 20px;
   border-radius:20px;
   box-shadow:0 3px 10px rgba(0,0,0,0.05);
+  transition:0.25s;
+  font-weight:500;
+  border:2px solid transparent;
+  background:linear-gradient(var(--card), var(--card)) padding-box,
+             linear-gradient(90deg,var(--primary),var(--accent)) border-box;
+}
+
+.skill:hover{
+  transform:translateY(-3px);
+  background: var(--card);
+  color: var(--accent);
 }
 
 /* Main achievement cards */
