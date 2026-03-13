@@ -4,7 +4,7 @@ This repository contains the code for my personal portfolio website.
 
 ## 🔗 Live Website
 
-A personal portfolio built from scratch using HTML, CSS, and JavaScript.
+A personal portfolio built from scratch using HTML and CSS
 View the portfolio here:
 [Sinchan Suvarna | Portfolio](https://chan-nie.github.io/portfolio/)
 
@@ -22,7 +22,6 @@ View the portfolio here:
 
 * HTML
 * CSS
-* JavaScript
 * GitHub Pages
 
 ## 📁 Repository
