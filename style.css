@@ -357,6 +357,70 @@ nav a:hover::after{
   width:100%;
 }
 
+.contact-form{
+  max-width:480px;
+  margin:40px auto 0;
+  text-align:left;
+}
+
+.form-group{
+  margin-bottom:20px;
+}
+
+.form-group label{
+  display:block;
+  margin-bottom:6px;
+  font-weight:700;
+  color:var(--text);
+}
+
+.form-group input,
+.form-group textarea{
+  width:100%;
+  padding:10px 14px;
+  border:2px solid var(--primary);
+  border-radius:8px;
+  font-family:'Lato', sans-serif;
+  font-size:1rem;
+  background:var(--card);
+  color:var(--text);
+  box-sizing:border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+  outline:none;
+  border-color:var(--accent);
+  box-shadow:0 0 0 3px rgba(146,168,209,0.25);
+}
+
+.form-group input[aria-invalid="true"],
+.form-group textarea[aria-invalid="true"]{
+  border-color:#c2185b;
+}
+
+.form-error{
+  display:block;
+  min-height:1.25em;
+  margin-top:6px;
+  color:#c2185b;
+  font-size:0.9rem;
+}
+
+.form-success{
+  margin-top:16px;
+  color:var(--accent);
+  font-weight:700;
+  text-align:center;
+}
+
+.contact-form .btn{
+  width:100%;
+  border:none;
+  cursor:pointer;
+  margin-top:8px;
+}
+
 /* FOOTER */
 
 footer{

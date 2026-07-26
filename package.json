@@ -1,0 +1,10 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "scripts": {
+    "test": "node tests/contact-form.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "^26.0.0"
+  }
+}
